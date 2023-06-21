@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer base {
+  h3 {
+    @apply mb-8 text-5xl font-bold text-darkGrayishblue;
+  }
+  h4 {
+    @apply text-2xl font-semibold text-darkGrayishblue;
+  }
+}
+
+.section-content {
+  @apply max-w-3xl text-grayishBlue mx-auto text-center leading-9;
+}
+
+.button-cyan {
+  @apply p-4 px-8 rounded-full shadow-lg bg-strongCyan duration-200 hover:opacity-80 text-white text-xl mr-4;
+}
+
+.button-lightBlue {
+  @apply p-4 px-8 rounded-full shadow-lg bg-lightBlue duration-200 hover:opacity-80 text-white text-xl;
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+body {
+  background-image: url("../images/body-backgroun-image.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
